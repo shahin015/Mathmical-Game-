@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bran Game App</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+        /////facebook Ads unite Id
+    <string name="fbvideosAds"> </string>
+    <string name="fbfullscreenAds">297402769105985_306814641498131</string>
+</resources>

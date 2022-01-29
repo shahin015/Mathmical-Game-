@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/id"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="#ED134581"
+    tools:context="shahin.shahin.brangameapp.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    app:lottie_autoPlay="false"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/timer" />
+
+                <TextView
+
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="প্রশ্ন"
+                    android:textColor="#F1E6E6"
+                    android:textSize="45sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="Answer and Qustion"
+                    android:textColor="#E8F4EA"
+                    android:textSize="20sp"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <TextView
+                    android:id="@+id/timer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="30s"
+                    android:textColor="#EC3434"
+                    android:textSize="45sp" />
+
+                <TextView
+
+                    android:id="@+id/sumtextview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="40S"
+                    android:textColor="@color/black"
+                    android:textSize="45sp" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="0/0"
+                    android:textColor="#EBEFF3"
+                    android:textSize="45sp" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <Button
+                    android:id="@+id/button0"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/b_one_baground"
+                    android:backgroundTint="#FFE53B"
+                    android:onClick="choseAnswer"
+                    android:tag="0"
+                    android:text="go"
+                    android:textSize="40sp"
+                    app:layout_column="0"
+                    app:layout_columnWeight="1"
+                    app:layout_gravity="fill"
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/b_tow_baground"
+                    android:backgroundTint="#E91E63"
+                    android:onClick="choseAnswer"
+                    android:tag="1"
+                    android:text="go"
+                    android:textSize="40sp"
+
+                    app:layout_gravity="fill"
+
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+
+                >
+
+
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/b_three_baground"
+                    android:backgroundTint="#03A9F4"
+                    android:onClick="choseAnswer"
+                    android:tag="2"
+                    android:text="go"
+                    android:textSize="40sp"
+                    app:layout_gravity="fill"
+
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/b_four_baground"
+                    android:backgroundTint="#FF5722"
+                    android:onClick="choseAnswer"
+                    android:tag="3"
+                    android:text="go"
+                    android:textSize="40sp"
+
+                    app:layout_gravity="fill"
+
+                    app:layout_row="0"
+                    app:layout_rowWeight="1" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:weightSum="90">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/rightanim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/right" />
+
+                <TextView
+
+                    android:id="@+id/answer"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    android:gravity="center"
+                    android:text="Answer"
+                    android:onClick="ads"
+                    android:textColor="@color/white"
+                    android:textSize="35sp" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/wronganim"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="30"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/wrongjson" />
+
+
+            </LinearLayout>
+
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/playwithtime"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:lineHeight="@dimen/cardview_compat_inset_shadow"
+                android:text="Play With Time "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:neumorph_shadowColorDark="#B0CA1B"
+                app:neumorph_shadowColorLight="#856E1B"
+                app:neumorph_shadowElevation="2dp"
+
+                />
+
+            <EditText
+                android:id="@+id/timeInput"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="Enter Time"
+                android:inputType="number"
+                android:maxLength="1"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

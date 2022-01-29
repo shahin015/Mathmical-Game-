@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "241985364636",
+    "firebase_url": "https://brangame-5f900-default-rtdb.firebaseio.com",
+    "project_id": "brangame-5f900",
+    "storage_bucket": "brangame-5f900.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241985364636:android:ec7f366883170ccdf94359",
+        "android_client_info": {
+          "package_name": "shahin.shahin.brangameapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241985364636-1njro79hrice76vk94hsh5k7udobf98m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "shahin.shahin.brangameapp",
+            "certificate_hash": "d4f7d4097add002488137990c01043928d2ae5cb"
+          }
+        },
+        {
+          "client_id": "241985364636-8f8k0vdg4erdpt8efc6naj4euj1mg6o7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCEosQE36OaoaM-6Ug1mkPNjScDtyrqd20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241985364636-8f8k0vdg4erdpt8efc6naj4euj1mg6o7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
