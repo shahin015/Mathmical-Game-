@@ -7,9 +7,12 @@
         <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/drawable/b_one_baground.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/drawable/b_three_baground.xml" value="0.19114583333333332" />
         <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/drawable/b_tow_baground.xml" value="0.19114583333333332" />
-        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_main.xml" value="0.15" />
-        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_main2.xml" value="0.175" />
+        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/drawable/clear.xml" value="0.1" />
+        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_main2.xml" value="0.1" />
+        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_opening.xml" value="0.12092391304347826" />
         <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/activity_starta_game.xml" value="0.15081521739130435" />
+        <entry key="..\:/Users/Shahain/AndroidStudioProjects/BranGameApp/app/src/main/res/layout/ads_native_id.xml" value="0.1" />
       </map>
     </option>
   </component>

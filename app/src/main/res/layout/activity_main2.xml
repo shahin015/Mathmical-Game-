@@ -1,67 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/white"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:layout_gravity="center"
-    android:gravity="center"
     tools:context="shahin.shahin.brangameapp.MainActivity2">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/layoutID"
+        >
 
-
-
-
-        <TextView
-            android:id="@+id/textviewsssss"
+        <LinearLayout
+            android:id="@+id/banner_container_maiActitivity2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="306dp"
-            android:gravity="center"
-            android:text="Wellcome"
-            android:textColor="#6EDF0B"
-            android:textSize="25sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            android:orientation="vertical"
+            android:visibility="visible"
+            />
 
-        <TextView
-            android:id="@+id/text2"
-            android:layout_width="match_parent"
+        <com.startapp.sdk.ads.banner.Banner
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="56dp"
-            android:gravity="center"
+            android:id="@+id/startio_banner_Top"
+            ads:adSize="BANNER"
             android:visibility="gone"
-            android:text="Wellcome"
-            android:textColor="#6EDF0B"
-            android:textSize="25sp"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/lottieAnimationView" />
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
 
-        <Button
-            android:id="@+id/agine"
-            android:layout_width="match_parent"
+            />
+
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/madview"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="306dp"
-            android:padding="10dp"
-            android:text="Play Agine"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            ads:adSize="BANNER"
+            android:layout_gravity="center"
+            ads:adUnitId="@string/admob_BANNER_UNIT_ID">
+        </com.google.android.gms.ads.AdView>
 
 
-        <com.airbnb.lottie.LottieAnimationView
-            android:id="@+id/rightanim"
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textviewsssss"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@raw/celebration" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/linerLayout"
+        android:layout_below="@id/layoutID"
+        >
+    <TextView
+        android:id="@+id/textviewsssss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Wellcome"
+        android:layout_marginTop="20dp"
+        android:textColor="#6EDF0B"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
         <com.airbnb.lottie.LottieAnimationView
@@ -74,29 +81,29 @@
             app:layout_constraintTop_toTopOf="parent"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
-            app:lottie_rawRes="@raw/congratulation" />
+            app:lottie_rawRes="@raw/congratulation"/>
 
-
-
-
-
-
-
-
-
-
-    <com.google.android.gms.ads.AdView
-        xmlns:ads="http://schemas.android.com/apk/res-auto"
-        android:id="@+id/adView"
+    <Button
+        android:id="@+id/agine"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_gravity="center"
+        android:text="Play Agine"
+        android:clickable="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    </LinearLayout>
+
+
+    <com.startapp.sdk.ads.banner.Banner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/startio_banner_bottom"
         ads:adSize="BANNER"
-        ads:adUnitId="@string/banner_ad_unit_id">
-    </com.google.android.gms.ads.AdView>
-
-
-
-
-
-
-</LinearLayout>
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

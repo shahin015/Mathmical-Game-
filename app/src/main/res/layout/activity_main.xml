@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/id"
@@ -8,60 +8,59 @@
     android:layout_height="match_parent"
     android:background="#ED134581"
     tools:context="shahin.shahin.brangameapp.MainActivity">
+    <ScrollView
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-
-
-
+        android:layout_height="wrap_content">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             tools:ignore="MissingConstraints">
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="40dp"
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="90">
-
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/animationView"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="30"
-                    app:lottie_autoPlay="false"
+                    app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/timer" />
 
                 <TextView
-
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="30"
                     android:gravity="center"
-                    android:text="প্রশ্ন"
+                    android:text="Qustion"
                     android:textColor="#F1E6E6"
-                    android:textSize="45sp"
-
+                    android:textSize="18sp"
                     />
-
                 <TextView
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="30"
-                    android:gravity="center"
+                    android:gravity="bottom"
                     android:text="Answer and Qustion"
                     android:textColor="#E8F4EA"
-                    android:textSize="20sp"
-
+                    android:textSize="12sp"
                     />
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -70,7 +69,6 @@
                 android:gravity="center"
                 android:orientation="horizontal"
                 android:weightSum="90">
-
                 <TextView
                     android:id="@+id/timer"
                     android:layout_width="fill_parent"
@@ -80,18 +78,15 @@
                     android:text="30s"
                     android:textColor="#EC3434"
                     android:textSize="45sp" />
-
                 <TextView
-
                     android:id="@+id/sumtextview"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="30"
                     android:gravity="center"
-                    android:text="40S"
-                    android:textColor="@color/black"
-                    android:textSize="45sp" />
-
+                    android:text="text"
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
                 <TextView
                     android:id="@+id/score"
                     android:layout_width="fill_parent"
@@ -99,20 +94,14 @@
                     android:layout_weight="30"
                     android:gravity="center"
                     android:text="0/0"
-                    android:textColor="#EBEFF3"
+                    android:textColor="@color/black"
                     android:textSize="45sp" />
-
-
             </LinearLayout>
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2">
-
-
                 <Button
                     android:id="@+id/button0"
                     android:layout_width="fill_parent"
@@ -129,8 +118,6 @@
                     app:layout_gravity="fill"
                     app:layout_row="0"
                     app:layout_rowWeight="1" />
-
-
                 <Button
                     android:id="@+id/button1"
                     android:layout_width="fill_parent"
@@ -142,9 +129,7 @@
                     android:tag="1"
                     android:text="go"
                     android:textSize="40sp"
-
                     app:layout_gravity="fill"
-
                     app:layout_row="0"
                     app:layout_rowWeight="1" />
 
@@ -172,7 +157,6 @@
                     android:text="go"
                     android:textSize="40sp"
                     app:layout_gravity="fill"
-
                     app:layout_row="0"
                     app:layout_rowWeight="1" />
 
@@ -187,9 +171,7 @@
                     android:tag="3"
                     android:text="go"
                     android:textSize="40sp"
-
                     app:layout_gravity="fill"
-
                     app:layout_row="0"
                     app:layout_rowWeight="1" />
 
@@ -223,7 +205,6 @@
                     android:onClick="ads"
                     android:textColor="@color/white"
                     android:textSize="35sp" />
-
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/wronganim"
                     android:layout_width="fill_parent"
@@ -232,45 +213,104 @@
                     app:lottie_autoPlay="true"
                     app:lottie_loop="false"
                     app:lottie_rawRes="@raw/wrongjson" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="50"
+                android:layout_margin="10dp"
+                >
+                <EditText
+                    android:id="@+id/timeInput"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="25"
+                    android:gravity="center"
+                    android:hint="Enter Time"
+                    android:layout_gravity="center"
+                    android:inputType="number"
+                    android:maxLength="1"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="25"
+                    android:background="#ED134581"
+                    android:layout_gravity="center"
+                    android:backgroundTint="#ED134581"
+                    android:clickable="true"
+                    android:id="@+id/stopeTime"
+                    android:src="@drawable/ic_baseline_timer_off_24"
+                    android:layout_marginHorizontal="100dp"
+
+                    >
+
+                </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:layout_margin="10dp"
+                >
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/playwithtime"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Play With Time "
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shadowColorDark="#ED13814E"
+                    app:neumorph_shadowColorLight="#EDE6238E"
+                    app:neumorph_shadowElevation="2dp"
+                    />
+                <soup.neumorphism.NeumorphButton
+                    android:id="@+id/seeSult"
+                    style="@style/Widget.Neumorph.Button"
+                    android:layout_width="fill_parent"
+                    android:layout_weight="50"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="See Your Result "
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:neumorph_shapeType="basin"
+                    app:neumorph_shadowColorDark="#ED13814E"
+                    app:neumorph_shadowColorLight="#EDE6238E"
+                    app:neumorph_shadowElevation="2dp"
+                    />
+
+
+
 
 
             </LinearLayout>
 
-            <soup.neumorphism.NeumorphButton
-                android:id="@+id/playwithtime"
-                style="@style/Widget.Neumorph.Button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:lineHeight="@dimen/cardview_compat_inset_shadow"
-                android:text="Play With Time "
-                android:textAllCaps="false"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold"
-                app:neumorph_shadowColorDark="#B0CA1B"
-                app:neumorph_shadowColorLight="#856E1B"
-                app:neumorph_shadowElevation="2dp"
 
-                />
 
-            <EditText
-                android:id="@+id/timeInput"
-                style="@style/Widget.AppCompat.EditText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:hint="Enter Time"
-                android:inputType="number"
-                android:maxLength="1"
-                android:padding="5dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/white"
-                android:textSize="25sp"
-                android:textStyle="bold" />
 
-        </LinearLayout>
+            </LinearLayout>
 
 
 
@@ -278,4 +318,55 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-</LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+
+        android:layout_gravity="center">
+
+        <com.startapp.sdk.ads.banner.Banner
+            android:id="@+id/startio_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="gone"
+            ads:adSize="BANNER" />
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/madview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startio_banner"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            ads:adSize="BANNER"
+            ads:adUnitId="@string/admob_BANNER_UNIT_ID">
+
+
+        </com.google.android.gms.ads.AdView>
+
+
+        <LinearLayout
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,7 +1,34 @@
 <resources>
     <string name="app_name">Bran Game App</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
-        /////facebook Ads unite Id
+
+    ///ads mob id
+
+    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="AdmoveInterstatil">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="Admovideoreword">ca-app-pub-3940256099942544/5224354917</string>
+
+
+
+    /////admob orginal
+
+<!--    <string name="admob_BANNER_UNIT_ID">ca-app-pub-3940256099942544/6300978111</string>-->
+<!--    <string name="AdmoveInterstatil">ca-app-pub-2341604818982815/6436490222</string>-->
+<!--    <string name="Admovideoreword">ca-app-pub-2341604818982815/2199175391</string>-->
+
+
+    /////admob
+
+
+    <string name="Reword_ads">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="Nativeadvance">ca-app-pub-3940256099942544/2247696110</string>
+    /////facebook Ads unite Id
+
+
     <string name="fbvideosAds"> </string>
-    <string name="fbfullscreenAds">297402769105985_306814641498131</string>
+    <string name="fbfullscreenAds">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+    <string name="fbbanenr">IMG_16_9_APP_INSTALL#YOUR_PLACEMENT_ID</string>
+
+
+
+    <string name="startAppid">200951004</string>
 </resources>
